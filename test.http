@@ -1,0 +1,13 @@
+### Health Check
+GET http://localhost:3000
+
+### Send Email (Replace with valid data)
+POST http://localhost:3000/api/send-email
+Content-Type: application/json
+
+{
+  "to": "your-recipient@example.com",
+  "subject": "Test Email from Nodemailer API",
+  "text": "This is a test email sent from the newly created Nodemailer API!",
+  "html": "<html><body><h1>Hello!</h1><p>This is a test email from your <b>Nodemailer API</b>.</p></body></html>"
+}
